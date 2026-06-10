@@ -57,6 +57,7 @@ authRoutes.post("/login", async (req: Request, res: Response) => {
 
   req.session.userId = user.id;
   req.session.userName = user.nome;
+  req.session.role = user.role;
 
   return res.redirect("/tarefas");
 });
