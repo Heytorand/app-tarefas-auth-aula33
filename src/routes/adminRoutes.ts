@@ -4,21 +4,20 @@ import * as UserModel from "../models/userModel";
 import { requireAuth } from "../middleware/requireAuth";
 import { requireRole } from "../middleware/requireRole";
 
-import { Role } from "../types/Role";
+import { Role } from "../enums/routes";
 
 export const adminRoutes = Router();
 
 adminRoutes.get(
-  "/admin",
+  "/admin/tarefas",
   requireAuth,
   requireRole(Role.ADMIN),
   async (req, res) => {
-
     const usuarios =
       await UserModel.listarUsuarios();
 
     res.render("admin", {
-      usuarios
+      usuarios,
     });
   }
 );
