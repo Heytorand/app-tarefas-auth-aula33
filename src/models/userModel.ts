@@ -1,6 +1,6 @@
 import { readFile, writeFile } from "fs/promises";
 import bcrypt from "bcrypt";
-import { Role } from "../types/Role";
+import { Role } from "../enums/routes";
 
 export interface User {
   id: number;
@@ -47,7 +47,9 @@ export async function registrar(
 ): Promise<User> {
   const users = await carregar();
 
-  const existente = users.find((u) => u.email === email);
+  const existente = users.find(
+    (u) => u.email === email
+  );
 
   if (existente) {
     throw new Error("E-mail já cadastrado");
