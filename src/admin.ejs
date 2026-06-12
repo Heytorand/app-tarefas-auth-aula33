@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Painel Admin</title>
+</head>
+<body>
+  <h1>Painel do Administrador</h1>
+
+  <h2>Usuários cadastrados</h2>
+
+  <ul>
+    <% usuarios.forEach(usuario => { %>
+      <li>
+        <%= usuario.nome %> -
+        <%= usuario.email %> -
+        <%= usuario.role %>
+      </li>
+    <% }) %>
+  </ul>
+
+</body>
+</html>
