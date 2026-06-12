@@ -9,7 +9,7 @@ import { Role } from "../enums/routes";
 export const adminRoutes = Router();
 
 adminRoutes.get(
-  "/admin/tarefas",
+  "/admin",
   requireAuth,
   requireRole(Role.ADMIN),
   async (req, res) => {
