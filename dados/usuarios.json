@@ -5,5 +5,12 @@
     "email": "heytorferba@gmail.com",
     "senha": "$2b$10$/eEwoJfHESI46HKi38Y2j.SDa3sJgGiRzIEj/ZXnWS.wo2SxXcXrq",
     "role": "ADMIN"
+  },
+  {
+    "id": 1781282062259,
+    "nome": "MORAIS GABRIEL",
+    "email": "gabrielmorais@gmail.com",
+    "senha": "$2b$10$CtWmW7sQzKEON52gWFeQoe/5ZqqmCHcKopZNOCVer9fKbxrbnlShi",
+    "role": "USER"
   }
 ]
