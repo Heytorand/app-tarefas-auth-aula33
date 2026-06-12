@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": 1781280749529,
+    "nome": "Nildinho",
+    "email": "heytorferba@gmail.com",
+    "senha": "$2b$10$/eEwoJfHESI46HKi38Y2j.SDa3sJgGiRzIEj/ZXnWS.wo2SxXcXrq",
+    "role": "ADMIN"
+  }
+]
